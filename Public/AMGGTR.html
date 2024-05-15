@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlok's Cars</title>
+    <link rel="stylesheet" href="../Public/style.css">
+    <link rel="icon" href="../Images/RS.png">
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar ">
+            <li onclick=hideSidebar()><a href=""><img class="x" src="../Images/x.png" alt=""></a></li>
+            <li><a href="../Public/AMGGTR.html">AMG GTR</a></li>
+            <li><a href="../Public/R8V10.html">R8 V10+</a></li>
+            <li><a href="../Public/GT3RS.html">GT3RS</a></li>
+        </ul>
+        <ul>
+            <li><a href="../index.html"><img class="RS" src="../Images/RS.png" alt=""></a></li>
+            <li class="hideonMobile"><a href="../Public/AMGGTR.html">AMG GTR</a></li>
+            <li class="hideonMobile"><a href="../Public/R8V10.html">R8 V10+</a></li>
+            <li class="hideonMobile"><a href="../Public/GT3RS.html">GT3RS</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+
+        </ul>
+    </nav>
+
+    <div class="headd">
+        <h1 class="head">CFM 2707</h1>
+    </div>
+
+    <div class="gtr-display">
+        <img class="gtr-pic" src="../Images/GTR/4x5/1.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-6.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-13.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-26.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-22.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-7.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-17.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024-39.jpg">
+        <img class="gtr-pic" src="../Images/GTR/4x5/gtr4x5, Simon, 2024.jpg">
+    </div>
+
+    <a class="gtr-drive" href="https://drive.google.com/drive/folders/16Q6TKepabAkJgdV9fNvi9mRonBqJ-JDc" target="_blank"><img class="gtr-drive-pic" src="../Images/google drive.png"></a>
+
+    <script> 
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

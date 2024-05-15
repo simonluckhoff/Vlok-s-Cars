@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: seagreen;
+}
+
+nav{
+    background-color: grey;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: #1b1c1e;
+}
+
+nav li:first-child{
+    margin-right: auto;
+} 
+
+.RS{
+    height: 100%;
+}
+
+.x{
+    height: 27px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(128, 128, 128, 0.507);
+    backdrop-filter: blur(10px); 
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* .sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}  */
+
+.menu-button{
+    display: none;
+}
+
+.menu{
+    width: 26px;
+}
+
+.svg{
+    fill: white;
+}
+
+@media(max-width: 800px){
+    .hideonMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+/*-- Vlok's Cars --*/
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.vlokscars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 10px;
+
+}
+
+.peace{
+    height: 50vh;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 4rem;
+    color: white;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 1rem;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 800px){
+    h1{
+        font-size: 2rem;
+    }
+    .peace{
+        height: 25vh;
+    }
+    .vlokscars{
+        display: flex;
+        flex-direction: column;
+    }
+    .GTR{
+        padding-bottom: 10px;
+    }
+    .GT3RS{
+        padding-bottom: 10px;
+    }
+    .r8v10{
+        padding-bottom: 10px;
+        padding-bottom: 25px;
+    }
+}
+
+/*-- AMG GTR --*/
+
+.gtr-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* padding: 25px; */
+
+}
+
+.gtr-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 25px;
+}
+
+@media(max-width: 800px){
+    .gtr-display{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.gtr-drive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gtr-drive-pic{
+    height: 5vh;
+    padding: 25px;
+}
